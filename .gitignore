@@ -1,0 +1,24 @@
+.DS_Store
+
+# Local environment variables
+.env
+.env.*
+!.env.example
+
+# Vercel local project metadata
+.vercel
+
+# Editor settings
+.vscode/
+.idea/
+
+# Common local/dependency/build artifacts
+node_modules/
+dist/
+coverage/
+
+# Package manager debug logs
+npm-debug.log*
+yarn-debug.log*
+yarn-error.log*
+pnpm-debug.log*

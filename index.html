@@ -1,0 +1,123 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8" />
+  <meta
+    http-equiv="Content-Security-Policy"
+    content="default-src 'self'; img-src 'self' data:; style-src 'self'; script-src 'self'; connect-src 'self'; base-uri 'none'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests"
+  />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <meta name="description" content="OverThink is a calm iPhone app for interrupting overthinking loops with guided check-ins, distress tracking, and repeatable practice." />
+  <meta name="theme-color" content="#F7F9FF" />
+  <title>OverThink</title>
+  <link rel="stylesheet" href="./styles.css" />
+  <script type="module" src="./main.js"></script>
+</head>
+<body>
+  <div class="page-shell">
+    <div class="ambient ambient-one" aria-hidden="true"></div>
+    <div class="ambient ambient-two" aria-hidden="true"></div>
+    <div class="ambient ambient-three" aria-hidden="true"></div>
+
+    <header class="site-header reveal">
+      <a class="brand-lockup" href="#top" aria-label="OverThink home">
+        <img class="brand-brain" src="./assets/brand-brain.png" alt="" />
+        <img class="brand-wordmark" src="./assets/brand-wordmark.png" alt="OverThink" />
+      </a>
+
+      <p class="header-badge">Coming soon for iPhone</p>
+    </header>
+
+    <main id="top">
+      <section class="signup-band reveal" id="waitlist" aria-label="Launch signup">
+        <article class="signup-card">
+          <div class="signup-copy">
+            <p class="eyebrow">Launch updates</p>
+            <h2>Get the launch email when OverThink is ready.</h2>
+          </div>
+
+          <div class="signup-form-shell">
+            <form class="waitlist-form signup-form" data-waitlist-form novalidate>
+              <label class="sr-only" for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="Email address"
+                required
+              />
+
+              <div class="trap-field" aria-hidden="true">
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button type="submit" data-submit-button>Get launch updates</button>
+            </form>
+
+            <p class="form-note">Join the list for launch updates and first access.</p>
+            <p class="form-message" data-form-message aria-live="polite"></p>
+          </div>
+        </article>
+      </section>
+
+      <section class="hero">
+        <div class="hero-copy reveal">
+          <h1>A calmer way to interrupt overthinking.</h1>
+          <p class="hero-summary">
+            Guided check-ins help you name the loop, move through a short prompt flow, and practice responding without feeding the thought.
+          </p>
+
+          <div class="hero-points" aria-label="Highlights">
+            <div class="point-chip">Guided Check-In</div>
+            <div class="point-chip">Distress tracking</div>
+            <div class="point-chip">Thought timer</div>
+          </div>
+
+          <p class="hero-footnote">
+            Made for the moment you notice the loop. Open the app, start a check-in, and move through a calm flow that feels native on iPhone.
+          </p>
+        </div>
+
+        <div class="hero-visual reveal">
+          <div class="screen-stage">
+            <div class="screen-glow screen-glow-top" aria-hidden="true"></div>
+            <div class="screen-glow screen-glow-bottom" aria-hidden="true"></div>
+
+            <div class="screen-stack">
+              <figure class="phone-card phone-card-back">
+                <div class="phone-frame dark-frame">
+                  <img src="./assets/screens/OverThink-dark-screenshot.png" alt="OverThink dark mode home screen with Guided Check-In, Check-In Status, and Sit With A Thought." />
+                </div>
+              </figure>
+
+              <figure class="phone-card phone-card-front">
+                <div class="phone-frame light-frame">
+                  <img src="./assets/screens/OverThink-light-screenshot.png" alt="OverThink light mode home screen with Guided Check-In, Check-In Status, and Sit With A Thought." />
+                </div>
+              </figure>
+            </div>
+
+            <aside class="floating-detail" aria-label="Guided check-in details">
+              <p class="floating-label">Guided Check-In</p>
+              <h2>Short, structured, and easy to repeat.</h2>
+              <ul class="detail-list">
+                <li>Name the thought</li>
+                <li>Work through prompts</li>
+                <li>Track distress shift</li>
+              </ul>
+            </aside>
+          </div>
+        </div>
+      </section>
+
+    </main>
+
+    <footer class="site-footer reveal">
+      <p>OverThink is a personal self-practice tool for working through overthinking loops. It does not provide medical advice or replace professional care.</p>
+    </footer>
+  </div>
+</body>
+</html>
