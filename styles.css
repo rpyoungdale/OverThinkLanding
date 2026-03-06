@@ -634,3 +634,127 @@ input {
     width: auto;
   }
 }
+
+.legal-links {
+  margin-top: 12px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  font-size: 14px;
+  color: var(--text-secondary);
+}
+
+.legal-links a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+.legal-page .ambient {
+  position: fixed;
+}
+
+.legal-header {
+  margin-bottom: 20px;
+}
+
+.legal-main {
+  width: var(--content-width);
+  margin: 0 auto 40px;
+  position: relative;
+  z-index: 1;
+}
+
+.legal-card {
+  border: 1px solid rgba(255, 255, 255, 0.68);
+  border-radius: 30px;
+  background: linear-gradient(180deg, rgba(255, 255, 255, 0.8), rgba(255, 255, 255, 0.92));
+  backdrop-filter: blur(18px);
+  box-shadow: var(--shadow-soft);
+  padding: clamp(22px, 3vw, 34px);
+}
+
+.legal-nav {
+  display: flex;
+  gap: 14px;
+  margin-bottom: 16px;
+  flex-wrap: wrap;
+}
+
+.legal-nav a {
+  color: var(--text-secondary);
+  font-weight: 600;
+  text-decoration: none;
+  border-bottom: 2px solid transparent;
+  padding-bottom: 2px;
+}
+
+.legal-nav a.active {
+  color: var(--accent-primary);
+  border-color: var(--accent-primary);
+}
+
+.legal-card h1,
+.legal-card h2,
+.legal-card h3 {
+  margin: 0;
+  font-family: var(--font-display);
+  color: var(--text-primary);
+  letter-spacing: -0.03em;
+}
+
+.legal-card h1 {
+  font-size: clamp(2rem, 3.8vw, 2.8rem);
+  line-height: 1.02;
+  margin-bottom: 14px;
+}
+
+.legal-card h2 {
+  font-size: clamp(1.35rem, 2.2vw, 1.7rem);
+  line-height: 1.12;
+  margin-top: 24px;
+  margin-bottom: 10px;
+}
+
+.legal-card h3 {
+  font-size: clamp(1.05rem, 1.7vw, 1.2rem);
+  line-height: 1.2;
+  margin-top: 14px;
+  margin-bottom: 8px;
+  font-weight: 700;
+}
+
+.legal-card p,
+.legal-card li {
+  color: var(--text-secondary);
+  line-height: 1.6;
+}
+
+.legal-card p {
+  margin: 0;
+}
+
+.legal-card ul {
+  margin: 8px 0 0;
+  padding-left: 22px;
+}
+
+.legal-card li + li {
+  margin-top: 6px;
+}
+
+.legal-card a {
+  color: var(--accent-primary);
+  text-decoration: underline;
+  text-underline-offset: 2px;
+}
+
+@media (max-width: 760px) {
+  .legal-links {
+    flex-wrap: wrap;
+  }
+
+  .legal-main {
+    margin-bottom: 28px;
+  }
+}

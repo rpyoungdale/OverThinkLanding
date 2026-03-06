@@ -5,6 +5,10 @@ This project is a standalone landing page for `OverThink` with a server-side wai
 ## Structure
 
 - `index.html`: static landing page
+- `privacy.html`: public Privacy Policy page, available at `/privacy`
+- `terms.html`: public Terms of Use page, available at `/terms`
+- `legal/Privacy-Policy.md`: local markdown source copy for privacy content
+- `legal/Terms-of-Use.md`: local markdown source copy for terms content
 - `styles.css`: app-matched visual system and responsive layout
 - `main.js`: reveal animations and waitlist form submission
 - `assets/screens/*.svg`: screenshot-style mockups based on the current iOS UI
