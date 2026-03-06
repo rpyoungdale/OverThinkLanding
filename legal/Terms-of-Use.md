@@ -35,4 +35,4 @@ By using the OverThink mobile application ("we", "our", or "the app"), you agree
 
 ## **Contact**
 
-- For questions regarding these Terms, contact: support@overthinkapp.com
+- For questions regarding these Terms, contact: overthinkapp@gmail.com

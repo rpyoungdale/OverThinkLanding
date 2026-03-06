@@ -62,4 +62,4 @@ Information collected may be used to:
 
 ## **Contact**
 
-- If you have questions about this Privacy Policy, contact: support@overthinkapp.com
+- If you have questions about this Privacy Policy, contact: overthinkapp@gmail.com
