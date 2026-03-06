@@ -9,7 +9,7 @@ This project is a standalone landing page for `OverThink` with a server-side wai
 - `terms.html`: public Terms of Use page, available at `/terms`
 - `legal/Privacy-Policy.md`: local markdown source copy for privacy content
 - `legal/Terms-of-Use.md`: local markdown source copy for terms content
-- `scripts/build-legal.mjs`: builds legal HTML pages from markdown
+- `scripts/build-legal.mjs`: builds legal HTML pages from markdown and prepares `public/` output
 - `styles.css`: app-matched visual system and responsive layout
 - `main.js`: reveal animations and waitlist form submission
 - `assets/screens/*.svg`: screenshot-style mockups based on the current iOS UI
@@ -18,8 +18,8 @@ This project is a standalone landing page for `OverThink` with a server-side wai
 ## Legal page workflow
 
 - Edit `legal/Privacy-Policy.md` and `legal/Terms-of-Use.md`.
-- Run `npm run build:legal` to regenerate `privacy.html` and `terms.html`.
-- Vercel runs the same command during deployment via `vercel.json` `buildCommand`.
+- Run `npm run build:legal` to regenerate `privacy.html` and `terms.html` and create a deployable `public/` folder.
+- Vercel runs the same command during deployment via `vercel.json` `buildCommand` and serves from `outputDirectory: "public"`.
 
 ## Secure waitlist storage
 

@@ -30,3 +30,6 @@ pnpm-debug.log*
 *.p8
 *.crt
 *.cer
+
+# Generated build output
+public/

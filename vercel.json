@@ -1,7 +1,7 @@
 {
   "cleanUrls": true,
   "buildCommand": "npm run build:legal",
-  "outputDirectory": ".",
+  "outputDirectory": "public",
   "redirects": [
     {
       "source": "/privacy-policy",

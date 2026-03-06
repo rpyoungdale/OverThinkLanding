@@ -1,11 +1,12 @@
 #!/usr/bin/env node
 
-import { readFile, writeFile } from "node:fs/promises";
+import { cp, mkdir, readFile, rm, writeFile } from "node:fs/promises";
 import path from "node:path";
 import process from "node:process";
 
 const ROOT_DIR = process.cwd();
 const LEGAL_DIR = path.join(ROOT_DIR, "legal");
+const PUBLIC_DIR = path.join(ROOT_DIR, "public");
 
 const PAGE_SPECS = [
   {
@@ -23,6 +24,9 @@ const PAGE_SPECS = [
     active: "terms"
   }
 ];
+
+const REQUIRED_STATIC_FILES = ["index.html", "styles.css", "main.js"];
+const OPTIONAL_STATIC_FILES = ["favicon.ico", "favicon.svg", "robots.txt"];
 
 function escapeHtml(value) {
   return value
@@ -214,10 +218,34 @@ function assertNoUnresolvedPlaceholders(filePath, markdown) {
   }
 }
 
+async function preparePublicDirectory() {
+  await rm(PUBLIC_DIR, { recursive: true, force: true });
+  await mkdir(PUBLIC_DIR, { recursive: true });
+
+  for (const fileName of REQUIRED_STATIC_FILES) {
+    await cp(path.join(ROOT_DIR, fileName), path.join(PUBLIC_DIR, fileName));
+  }
+
+  for (const fileName of OPTIONAL_STATIC_FILES) {
+    try {
+      await cp(path.join(ROOT_DIR, fileName), path.join(PUBLIC_DIR, fileName));
+    } catch {
+      // Optional file missing is fine.
+    }
+  }
+
+  await cp(path.join(ROOT_DIR, "assets"), path.join(PUBLIC_DIR, "assets"), {
+    recursive: true
+  });
+}
+
 async function buildLegalPages() {
+  await preparePublicDirectory();
+
   for (const page of PAGE_SPECS) {
     const sourcePath = path.join(LEGAL_DIR, page.source);
-    const outputPath = path.join(ROOT_DIR, page.output);
+    const rootOutputPath = path.join(ROOT_DIR, page.output);
+    const publicOutputPath = path.join(PUBLIC_DIR, page.output);
 
     const markdown = await readFile(sourcePath, "utf8");
     assertNoUnresolvedPlaceholders(page.source, markdown);
@@ -230,7 +258,9 @@ async function buildLegalPages() {
       contentHtml: htmlContent
     });
 
-    await writeFile(outputPath, fullPage, "utf8");
+    await writeFile(rootOutputPath, fullPage, "utf8");
+    await writeFile(publicOutputPath, fullPage, "utf8");
+
     console.log(`Generated ${page.output} from legal/${page.source}`);
   }
 }
