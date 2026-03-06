@@ -172,7 +172,7 @@ async function upsertResendContact(email) {
 
     if (!segmentResponse.ok && !looksLikeDuplicate(segmentResponse.status, segmentPayload)) {
       console.error("waitlist_segment_failed", segmentResponse.status, segmentPayload);
-      throw new UpstreamError("Resend add segment failed");
+      throw new UpstreamError("Resend add segment fail");
     }
   }
 
