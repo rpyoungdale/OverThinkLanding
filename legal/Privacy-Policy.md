@@ -32,6 +32,12 @@ OverThink ("we", "our", or "the app") respects your privacy. This Privacy Policy
   - The app may request permission to send notifications for reminders or check-ins.
   - Notifications are optional and can be disabled in your device settings.
 
+**Support Emails (Feedback and Bug Reports)**
+  - OverThink provides options to open your email app to send feedback or bug reports to overthinkapp@gmail.com.
+  - Sending these emails is optional and user-initiated.
+  - If you choose to send an email, we receive the information you include in your message.
+  - We also receive standard email metadata from your email provider, which may include your sender email address.
+
 ## **How We Use Information**
 
 Information collected may be used to:
@@ -39,6 +45,7 @@ Information collected may be used to:
   - Improve user experience
   - Fix bugs and improve performance
   - Understand how features are used
+  - Review and respond to feedback or bug reports that users choose to email.
   - We do not sell or share personal data with advertisers.
 
 ## **Data Storage**

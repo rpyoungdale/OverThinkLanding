@@ -9,6 +9,12 @@ By using the OverThink mobile application ("we", "our", or "the app"), you agree
 - OverThink is designed to help users reflect on thoughts and interrupt cycles of overthinking.
 - The app is provided for personal use only.
 
+## **Feedback and Bug Reports**
+
+- The app may provide options to open your email app to contact overthinkapp@gmail.com for feedback or bug reports.
+- Sending feedback or bug reports by email is optional and initiated by you.
+- If you choose to email support, you understand that your email may include your sender email address and other standard email metadata.
+
 ## **Not Medical Advice**
 
 - OverThink is not a medical or mental health service and does not provide therapy, diagnosis, or treatment.
