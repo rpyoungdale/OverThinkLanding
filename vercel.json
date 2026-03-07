@@ -2,6 +2,11 @@
   "cleanUrls": true,
   "buildCommand": "npm run build:legal",
   "outputDirectory": "public",
+  "functions": {
+    "api/**/*.js": {
+      "runtime": "nodejs20.x"
+    }
+  },
   "redirects": [
     {
       "source": "/privacy-policy",

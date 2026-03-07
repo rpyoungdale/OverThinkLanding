@@ -27,7 +27,7 @@ module.exports = async function handler(req, res) {
     const honeypot = typeof payload.company === "string" ? payload.company.trim() : "";
 
     if (honeypot) {
-      return sendJson(res, 200, { message: "You’re on the list." });
+      return sendJson(res, 200, { message: "You're on the list." });
     }
 
     if (!email || !EMAIL_PATTERN.test(email)) {
@@ -37,7 +37,7 @@ module.exports = async function handler(req, res) {
     const alreadySubscribed = await upsertResendContact(email);
 
     return sendJson(res, 200, {
-      message: alreadySubscribed ? "You’re already on the list." : "You’re on the list."
+      message: alreadySubscribed ? "You're already on the list." : "You're on the list."
     });
   } catch (error) {
     if (error instanceof ConfigError) {
@@ -51,7 +51,7 @@ module.exports = async function handler(req, res) {
     console.error("waitlist_unexpected_error", error);
     return sendJson(res, 500, { message: "Something went wrong. Please try again." });
   }
-}
+};
 
 function parseBody(body) {
   if (!body) {
@@ -133,13 +133,13 @@ async function upsertResendContact(email) {
 
   const createResponse = await resendRequest("/contacts", "POST", apiKey, {
     email,
-    unsubscribed: false,
-    ...(segmentId ? { segments: [{ id: segmentId }] } : {})
+    unsubscribed: false
   });
 
   const createPayload = await safeJson(createResponse);
 
   if (createResponse.ok) {
+    await addSegmentBestEffort(email, segmentId, apiKey);
     return false;
   }
 
@@ -162,21 +162,27 @@ async function upsertResendContact(email) {
     throw new UpstreamError("Resend update contact failed");
   }
 
-  if (segmentId) {
-    const segmentResponse = await resendRequest(
-      `/contacts/${encodeURIComponent(email)}/segments/${segmentId}`,
-      "POST",
-      apiKey
-    );
-    const segmentPayload = await safeJson(segmentResponse);
-
-    if (!segmentResponse.ok && !looksLikeDuplicate(segmentResponse.status, segmentPayload)) {
-      console.error("waitlist_segment_failed", segmentResponse.status, segmentPayload);
-      throw new UpstreamError("Resend add segment fail");
-    }
-  }
+  await addSegmentBestEffort(email, segmentId, apiKey);
 
   return true;
+}
+
+async function addSegmentBestEffort(email, segmentId, apiKey) {
+  if (!segmentId) {
+    return;
+  }
+
+  const segmentResponse = await resendRequest(
+    `/contacts/${encodeURIComponent(email)}/segments/${segmentId}`,
+    "POST",
+    apiKey
+  );
+  const segmentPayload = await safeJson(segmentResponse);
+
+  if (!segmentResponse.ok && !looksLikeDuplicate(segmentResponse.status, segmentPayload)) {
+    // Segment assignment is optional; keep signup successful and log for debugging.
+    console.error("waitlist_segment_failed", segmentResponse.status, segmentPayload);
+  }
 }
 
 function looksLikeDuplicate(status, payload) {
@@ -202,7 +208,12 @@ async function resendRequest(path, method, apiKey, body) {
     requestInit.body = JSON.stringify(body);
   }
 
-  return fetch(`https://api.resend.com${path}`, requestInit);
+  try {
+    return await fetch(`https://api.resend.com${path}`, requestInit);
+  } catch (error) {
+    console.error("waitlist_resend_request_failed", error);
+    throw new UpstreamError("Resend request failed");
+  }
 }
 
 async function safeJson(response) {
