@@ -1,72 +1,96 @@
 # Privacy Policy
 
-- **Effective Date:** 03/06/2026
+- **Effective Date:** 03/20/2026
 
-OverThink ("we", "our", or "the app") respects your privacy. This Privacy Policy explains what information is collected and how it is used when you use the OverThink mobile application.
+OverThink ("OverThink", "we", "our", or "us") respects your privacy. This Privacy Policy explains what information we collect, how we use it, and your choices when you use the OverThink mobile app and related legal pages.
 
 ## **Information We Collect**
 
 **Account Information**
   - OverThink uses Sign in with Apple for authentication.
-  - When you sign in, Apple may provide us with a unique identifier associated with your Apple account.
+  - Apple may provide us with a unique identifier tied to your Apple account.
   - Your email address may be provided if you choose to share it.
-  - We do not collect passwords or other account credentials.
+  - We do not collect or store passwords.
 
-**User Content**
-  - The app allows users to create personal check-in entries related to thoughts, reflections, and experiences.
-  - These entries are stored using Apple CloudKit and are encrypted.
-  - The developer cannot read or access the contents of this data.
-  - Your entries remain associated with your Apple iCloud account and are stored securely through Apple's infrastructure.
+**Check-In and App Content**
+  - You may enter thoughts, reflections, check-in responses, distress ratings, and related in-app content.
+  - This data is stored through Apple CloudKit and associated with your iCloud account.
+  - Content is encrypted in transit and at rest through Apple's infrastructure.
 
-**Analytics Information**
-  - We collect limited usage analytics to help improve the app.
-  - Analytics may include:
-    - Feature usage
-    - App performance
-    - Basic interaction events
-  - Analytics data is processed using Cloudflare analytics services.
-  - Analytics data is aggregated and does not identify you personally.
-  - We do not track your activity across other apps or websites.
+**Subscription and Purchase Information**
+  - If you subscribe to OverThink+, purchases are processed by Apple through the App Store.
+  - We may receive limited subscription metadata, such as product type, subscription status, transaction identifiers, trial status, renewal status, and expiration dates.
+  - We do **not** receive your full payment card number, bank account details, or other full payment credentials.
+
+**Usage and Diagnostics**
+  - We collect limited analytics and diagnostics data to improve app quality and reliability.
+  - This may include feature usage, app performance, crash/diagnostic events, and interaction events.
+  - Analytics data may be processed via Cloudflare and similar infrastructure providers.
+  - We do not sell your personal data and do not use third-party ad tracking across other apps or websites.
 
 **Notifications**
-  - The app may request permission to send notifications for reminders or check-ins.
-  - Notifications are optional and can be disabled in your device settings.
+  - You may choose to enable reminder notifications.
+  - Notification permissions are optional and can be changed in your device settings.
 
-**Support Emails (Feedback and Bug Reports)**
-  - OverThink provides options to open your email app to send feedback or bug reports to overthinkapp@gmail.com.
-  - Sending these emails is optional and user-initiated.
-  - If you choose to send an email, we receive the information you include in your message.
-  - We also receive standard email metadata from your email provider, which may include your sender email address.
+**Support Communications**
+  - The app may open your email app so you can contact us at overthinkapp@gmail.com.
+  - If you email us, we receive the content you send plus standard email metadata (such as sender address and message headers).
 
 ## **How We Use Information**
 
-Information collected may be used to:
-  - Operate and maintain the app
-  - Improve user experience
-  - Fix bugs and improve performance
-  - Understand how features are used
-  - Review and respond to feedback or bug reports that users choose to email.
-  - We do not sell or share personal data with advertisers.
+We use information to:
+  - Operate and maintain OverThink.
+  - Provide app functionality, including check-ins, reminders, and account-linked experiences.
+  - Process and manage OverThink+ subscription access.
+  - Improve performance, reliability, and product quality.
+  - Detect, prevent, and troubleshoot technical or security issues.
+  - Respond to support requests, feedback, and bug reports.
 
-## **Data Storage**
+## **How Subscription Data Is Handled**
 
-- User data is stored using Apple CloudKit, which is managed by Apple and secured through Apple's infrastructure.
-- Analytics data may be processed through Cloudflare services.
+  - Subscription billing, renewal, and cancellation are handled by Apple under Apple's terms and privacy policies.
+  - We use subscription status information from Apple to determine premium feature access.
+  - Refund requests and billing disputes are handled through Apple.
+
+## **How We Share Information**
+
+We may share limited data with service providers only as needed to run the app, such as:
+  - Apple (authentication, CloudKit data storage, in-app subscriptions).
+  - Cloud infrastructure and analytics providers.
+  - Email service infrastructure as part of user-initiated support communication.
+
+We may also disclose information:
+  - To comply with legal obligations.
+  - To protect rights, safety, and security of users, us, or others.
+  - In connection with a merger, acquisition, or asset transfer, where permitted by law.
+
+## **Data Retention**
+
+  - Check-in content remains in your CloudKit/iCloud context unless deleted by you or removed under Apple's platform behavior.
+  - Subscription and account-related metadata may be retained as needed for entitlement management, legal compliance, and fraud prevention.
+  - Support communications may be retained for service and troubleshooting history.
 
 ## **Data Security**
 
-- We take reasonable measures to protect your data.
-- Personal entries stored through CloudKit are encrypted and tied to your Apple account.
+  - We use reasonable safeguards designed to protect information we process.
+  - No security method is perfect, and we cannot guarantee absolute security.
 
 ## **Children's Privacy**
 
-- The app is not intended for children under the age of 12.
+  - OverThink is not directed to children under 13.
+  - If you believe a child provided personal data, contact us and we will review and address the request.
+
+## **Not Medical or Crisis Service**
+
+  - OverThink is a self-help tool and is not a medical, mental health, or crisis-response service.
+  - Do not use OverThink as a substitute for professional medical or mental health care.
+  - If you are in immediate danger or may harm yourself or others, contact local emergency services immediately.
 
 ## **Changes to This Policy**
 
-- We may update this Privacy Policy occasionally.
-- Updates will be posted on this page.
+  - We may update this Privacy Policy from time to time.
+  - Updated versions will be posted on this page with a revised effective date.
 
 ## **Contact**
 
-- If you have questions about this Privacy Policy, contact: overthinkapp@gmail.com
+  - For privacy questions, contact: overthinkapp@gmail.com
