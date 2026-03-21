@@ -96,6 +96,7 @@ input {
 }
 
 .site-header,
+.top-quick-links,
 .signup-band,
 .hero,
 .site-footer {
@@ -144,6 +145,15 @@ input {
   font-size: 14px;
   font-weight: 700;
   white-space: nowrap;
+}
+
+.top-quick-links {
+  width: var(--content-width);
+  margin: 10px auto 0;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  flex-wrap: wrap;
 }
 
 .signup-band {
@@ -674,6 +684,13 @@ input {
 
 .legal-links-buttons .legal-link-button:hover,
 .legal-links-buttons .legal-link-button:focus-visible {
+  transform: translateY(-1px);
+  background: rgba(255, 255, 255, 0.9);
+  box-shadow: 0 12px 22px rgba(60, 95, 208, 0.14);
+}
+
+.top-quick-links .legal-link-button:hover,
+.top-quick-links .legal-link-button:focus-visible {
   transform: translateY(-1px);
   background: rgba(255, 255, 255, 0.9);
   box-shadow: 0 12px 22px rgba(60, 95, 208, 0.14);
