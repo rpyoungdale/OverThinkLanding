@@ -26,10 +26,44 @@
         <img class="brand-wordmark" src="./assets/brand-wordmark.png" alt="OverThink" />
       </a>
 
-      <p class="header-badge">Guided check-ins for iPhone</p>
+      <p class="header-badge">Coming soon for iPhone</p>
     </header>
 
     <main id="top">
+      <section class="signup-band reveal" id="waitlist" aria-label="Launch signup">
+        <article class="signup-card">
+          <div class="signup-copy">
+            <p class="eyebrow">Launch updates</p>
+            <h2>Get the launch email when OverThink is ready.</h2>
+          </div>
+
+          <div class="signup-form-shell">
+            <form class="waitlist-form signup-form" data-waitlist-form novalidate>
+              <label class="sr-only" for="email">Email address</label>
+              <input
+                id="email"
+                name="email"
+                type="email"
+                inputmode="email"
+                autocomplete="email"
+                placeholder="Email address"
+                required
+              />
+
+              <div class="trap-field" aria-hidden="true">
+                <label for="company">Company</label>
+                <input id="company" name="company" type="text" tabindex="-1" autocomplete="off" />
+              </div>
+
+              <button type="submit" data-submit-button>Get launch updates</button>
+            </form>
+
+            <p class="form-note">Join the list for launch updates and first access.</p>
+            <p class="form-message" data-form-message aria-live="polite"></p>
+          </div>
+        </article>
+      </section>
+
       <section class="hero">
         <div class="hero-copy reveal">
           <h1>A calmer way to interrupt overthinking.</h1>

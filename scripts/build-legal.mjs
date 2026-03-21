@@ -25,7 +25,7 @@ const PAGE_SPECS = [
   }
 ];
 
-const REQUIRED_STATIC_FILES = ["index.html", "styles.css", "main.js", "support.html"];
+const REQUIRED_STATIC_FILES = ["index.html", "launch.html", "styles.css", "main.js", "support.html"];
 const OPTIONAL_STATIC_FILES = ["favicon.ico", "favicon.svg", "robots.txt"];
 
 function escapeHtml(value) {
