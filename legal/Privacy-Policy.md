@@ -99,11 +99,11 @@ We may also disclose information when necessary to:
 
 ## **Children's Privacy**
 
-  - OverThink is not directed to, and is not intended for use by, children under 13.
-  - We do not knowingly collect personal information from children under 13.
-  - If we learn that we collected personal information from a child under 13, we will delete it as required by law.
-  - If you believe a child under 13 has provided information through OverThink, contact overthinkapp@gmail.com.
-  - App Store age labels may vary by region or OS version; regardless of platform labeling, OverThink requires users to be at least 13 years old.
+  - OverThink is not directed to, and is not intended for use by, children under 9.
+  - We do not knowingly collect personal information from children under 9.
+  - If we learn that we collected personal information from a child under 9, we will delete it as required by law.
+  - If you believe a child under 9 has provided information through OverThink, contact overthinkapp@gmail.com.
+  - App Store age labels may vary by region or OS version; regardless of platform labeling, OverThink requires users to be at least 9 years old.
 
 ## **Not Medical or Crisis Service**
 

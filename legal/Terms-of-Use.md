@@ -12,10 +12,10 @@ By downloading, accessing, or using OverThink (the "App"), you agree to these Te
 
 ## **Eligibility and Minimum Age**
 
-  - You must be at least 13 years old to use OverThink.
-  - If you are under 13, you may not use OverThink.
+  - You must be at least 9 years old to use OverThink.
+  - If you are under 9, you may not use OverThink.
   - App Store age labels may vary by region or OS version.
-  - Regardless of platform labeling, the minimum age to use OverThink under these Terms is 13.
+  - Regardless of platform labeling, the minimum age to use OverThink under these Terms is 9.
 
 ## **Not Medical Advice; No Crisis Services**
 
@@ -93,7 +93,7 @@ By downloading, accessing, or using OverThink (the "App"), you agree to these Te
 ## **Termination**
 
   - We may suspend or terminate access to the App if we reasonably believe you violated these Terms, used the App in a harmful or unlawful manner, or are ineligible to use the App.
-  - We may suspend or terminate access if we reasonably believe a user is under 13.
+  - We may suspend or terminate access if we reasonably believe a user is under 9.
 
 ## **Severability and Entire Agreement**
 
