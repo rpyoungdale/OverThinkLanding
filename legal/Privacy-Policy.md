@@ -1,7 +1,7 @@
 # Privacy Policy
 
 - **Effective Date:** 03/20/2026
-- **Last Updated:** 03/20/2026
+- **Last Updated:** 03/23/2026
 
 This Privacy Policy explains how OverThink ("OverThink", "we", "our", or "us") collects, uses, discloses, and protects information when you use the OverThink app, subscription features, and related legal pages.
 

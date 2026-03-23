@@ -1,7 +1,7 @@
 # Terms of Use
 
 - **Effective Date:** 03/20/2026
-- **Last Updated:** 03/20/2026
+- **Last Updated:** 03/23/2026
 
 By downloading, accessing, or using OverThink (the "App"), you agree to these Terms of Use ("Terms"). If you do not agree, do not use the App.
 
