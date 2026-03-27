@@ -288,10 +288,6 @@ input {
   border-top: 1px solid rgba(110, 137, 200, 0.16);
 }
 
-.store-badge-wrap {
-  margin-top: 18px;
-}
-
 .app-store-badge-link {
   display: inline-flex;
   border-radius: 12px;
@@ -313,6 +309,10 @@ input {
 .app-store-badge {
   width: clamp(150px, 30vw, 186px);
   height: auto;
+}
+
+.header-store-badge .app-store-badge {
+  width: clamp(122px, 20vw, 164px);
 }
 
 .point-chip {
