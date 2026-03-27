@@ -288,6 +288,33 @@ input {
   border-top: 1px solid rgba(110, 137, 200, 0.16);
 }
 
+.store-badge-wrap {
+  margin-top: 18px;
+}
+
+.app-store-badge-link {
+  display: inline-flex;
+  border-radius: 12px;
+  line-height: 0;
+  transition: transform 180ms ease, box-shadow 180ms ease;
+}
+
+.app-store-badge-link:hover,
+.app-store-badge-link:focus-visible {
+  transform: translateY(-1px);
+  box-shadow: 0 10px 24px rgba(23, 33, 64, 0.16);
+}
+
+.app-store-badge-link:focus-visible {
+  outline: 2px solid rgba(60, 95, 208, 0.45);
+  outline-offset: 4px;
+}
+
+.app-store-badge {
+  width: clamp(150px, 30vw, 186px);
+  height: auto;
+}
+
 .point-chip {
   padding: 10px 14px;
   border-radius: 999px;
