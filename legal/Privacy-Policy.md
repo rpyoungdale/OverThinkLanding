@@ -1,7 +1,7 @@
 # Privacy Policy
 
 - **Effective Date:** 03/20/2026
-- **Last Updated:** 03/23/2026
+- **Last Updated:** 04/27/2026
 
 This Privacy Policy explains how OverThink ("OverThink", "we", "our", or "us") collects, uses, discloses, and protects information when you use the OverThink app, subscription features, and related legal pages.
 
@@ -18,7 +18,7 @@ This Privacy Policy explains how OverThink ("OverThink", "we", "our", or "us") c
   - We do not collect or store account passwords.
 
 **Check-In and App Content**
-  - You may enter thoughts, reflections, check-in responses, distress ratings, and similar app content.
+  - You may enter thoughts, reflections, check-in responses, quick support responses, distress ratings, and similar app content.
   - When iCloud sync is enabled, synced content is stored in Apple CloudKit and associated with your iCloud account.
   - Synced content is encrypted in transit and at rest through Apple's infrastructure.
   - OverThink also applies app-level encryption to cloud-synced payloads before upload.

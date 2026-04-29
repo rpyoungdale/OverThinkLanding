@@ -1,13 +1,13 @@
 # Terms of Use
 
 - **Effective Date:** 03/20/2026
-- **Last Updated:** 03/23/2026
+- **Last Updated:** 04/27/2026
 
 By downloading, accessing, or using OverThink (the "App"), you agree to these Terms of Use ("Terms"). If you do not agree, do not use the App.
 
 ## **What OverThink Is**
 
-  - OverThink is a self-help and reflection app intended to support thought-check-in practices.
+  - OverThink is a self-help and reflection app intended to support check-ins, quick support sessions, and related reflection practices.
   - OverThink is for personal, non-commercial use unless we expressly agree otherwise in writing.
 
 ## **Eligibility and Minimum Age**
@@ -27,7 +27,7 @@ By downloading, accessing, or using OverThink (the "App"), you agree to these Te
 
 ## **Subscriptions and Payments (OverThink+)**
 
-  - OverThink+ plans (including monthly, yearly, and trial offers) are billed through Apple in-app purchase.
+  - OverThink+ plans may include monthly, yearly, trial, or introductory offers when available, and are billed through Apple in-app purchase.
   - Apple handles payment processing, renewals, cancellations, billing, and refund workflows under Apple's terms.
   - Subscriptions may automatically renew unless canceled through your Apple account before renewal.
   - Plan availability, pricing, and features may change as permitted by law and platform rules.
